@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Albert Kolokin – Video editor in Belgrade</title>
+<meta name="description" content="Albert Kolokin is a freelance video editor in Belgrade. YouTube editing, Shorts and Reels, sound cleanup and subtitles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Newsreader:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eef0f2; --ink:#14181f; --muted:#555d6b; --line:#c9ced6; --accent:#c8321e; --card:#f8f9fa;
+  --head:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#14181f; --ink:#eef0f2; --muted:#a3abb8; --line:#333a47; --accent:#ff6a52; --card:#1b2029}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.15rem;line-height:1.6}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.5rem}
+header{padding:clamp(3rem,10vw,6rem) 0 2.5rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,9vw,5rem);letter-spacing:-.02em}
+.role{font-family:var(--head);font-size:clamp(1.2rem,3.5vw,1.6rem);font-weight:600;color:var(--muted);margin:.6rem 0 1.4rem}
+.lead{max-width:34rem;margin:0 0 1.8rem}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);font-family:var(--head);font-weight:700;text-decoration:none;padding:.8rem 1.4rem;border-radius:4px}
+.btn:hover{background:var(--accent);color:#fff}
+.timeline{display:flex;gap:4px;height:14px;margin:2.5rem 0 0}
+.timeline span{display:block;height:100%;background:var(--ink);border-radius:2px}
+.timeline span:nth-child(1){flex:5}.timeline span:nth-child(2){flex:2}.timeline span:nth-child(3){flex:7}
+.timeline span:nth-child(4){flex:3;background:var(--accent)}.timeline span:nth-child(5){flex:4}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,5vw,2.3rem);margin-bottom:1.4rem}
+.services{display:grid;gap:1.6rem 2.5rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.services h3{font-size:1.25rem;margin-bottom:.3rem}
+.services p{margin:0;color:var(--muted)}
+.works{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.work{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.work .thumb{aspect-ratio:16/9;background:var(--line);display:grid;place-items:center;color:var(--muted);font-family:var(--head);font-weight:600}
+.work .thumb iframe{width:100%;height:100%;border:0}
+.work div.info{padding:1rem 1.1rem 1.2rem}
+.work h3{font-size:1.1rem;margin-bottom:.3rem}
+.work p{margin:0 0 .6rem;color:var(--muted);font-size:1.02rem}
+.about p{max-width:36rem;margin:0 0 1rem}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1.5rem;margin:0}
+dt{font-family:var(--head);font-weight:600;color:var(--muted)}
+dd{margin:0;overflow-wrap:anywhere}
+footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:1rem}
+@media (max-width:520px){dl{grid-template-columns:1fr;gap:0}dd{margin-bottom:.8rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Albert Kolokin</h1>
+  <p class="role">Video editor in Belgrade, Serbia</p>
+  <p class="lead">I edit videos for YouTube creators and small businesses: clean cuts, clear sound and a steady pace that keeps people watching. Send me your footage and a short brief, and I will send back a finished video.</p>
+  <a class="btn" href="mailto:albekolokin@gmail.com?subject=Video%20editing%20project">Email me about your project</a>
+  <div class="timeline" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</header>
+
+<section id="services">
+  <h2>What I do</h2>
+  <div class="services">
+    <div><h3>YouTube videos</h3><p>Full editing of long-form videos: story structure, cuts, music, titles and graphics.</p></div>
+    <div><h3>Shorts and Reels</h3><p>Vertical clips with fast pacing and burned-in subtitles for YouTube Shorts, Instagram and TikTok.</p></div>
+    <div><h3>Sound cleanup</h3><p>Voice noise reduction, level balancing and music mixing, so the speech is easy to follow.</p></div>
+    <div><h3>Subtitles and colour</h3><p>Accurate subtitles in English and Russian, plus basic colour correction for a consistent look.</p></div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <div class="works">
+    <!-- TO ADD A VIDEO: replace the grey box with this line, using your own video ID:
+         <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Project title" allowfullscreen loading="lazy"></iframe> -->
+    <article class="work">
+      <div class="thumb">Video 1</div>
+      <div class="info"><h3>Project title</h3><p>Client or channel, type of video, what I did.</p></div>
+    </article>
+    <article class="work">
+      <div class="thumb">Video 2</div>
+      <div class="info"><h3>Project title</h3><p>Client or channel, type of video, what I did.</p></div>
+    </article>
+    <article class="work">
+      <div class="thumb">Video 3</div>
+      <div class="info"><h3>Project title</h3><p>Client or channel, type of video, what I did.</p></div>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About</h2>
+  <p>I am a freelance video editor based in Belgrade. I work in English and Russian, and I deliver on a fixed schedule agreed before the project starts.</p>
+  <p>I take projects from one-off Shorts to regular weekly series. Tell me what you need and when, and I will confirm price and timing in my first reply.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <dl>
+    <dt>Email</dt><dd><a href="mailto:albekolokin@gmail.com">albekolokin@gmail.com</a></dd>
+    <dt>Phone</dt><dd><a href="tel:+381638002642">+381 63 800 2642</a></dd>
+    <dt>Business</dt><dd>Albert Kolokin PR Belgrade</dd>
+    <dt>Address</dt><dd>Čika-Ljubina 12, 1st floor, Apartment 3, Stari Grad, Belgrade, Serbia</dd>
+    <dt>Company ID</dt><dd>68865247</dd>
+    <dt>Tax ID (PIB)</dt><dd>116060971</dd>
+  </dl>
+</section>
+
+</div>
+<footer>
+  <div class="wrap">© <span id="y">2026</span> Albert Kolokin PR Belgrade. Video editing services.</div>
+</footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
